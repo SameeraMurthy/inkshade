@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../dist/css/inkshade.css" />
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.min.js"></script>
+        <script src="../dist/js/inkshade.js" defer></script>
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+            defer
+        ></script>
+        <title>InkShade</title>
+    </head>
+    <body class="container-fluid p-0 m-0">
+        <nav class="navbar navbar-expand-md">
+            <div class="container">
+                <a class="link-body" href="/">
+                    <h4><b>Inkshade</b></h4>
+                </a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle Navigation">
+                    <svg class="gi gi-menu fs-5" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 6h16a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2zm0 5h16a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2zm0 5h16a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2z"/>
+                    </svg>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-5 mr-md-5 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/sameeramurthy/inkshade">Github</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/docs" aria-current="page">Docs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" id="switchDefault" type="checkbox" onchange="inkshade.toggleTheme()" data-theme-switch>
+                                    <label class="form-check-label" for="switchDefault">🌙</label>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="py-5 my-5 container-fluid">
+            <div class="row">
+                <div class="col-md border-right text-right py-4 px-5">
+                    <h3 class="mb-3">&gt; Inkshade.js</h3>
+                    <p class="mb-3 text-warning fw-bold">Use Inkshade.JS to toggle amazing dark themes switches.</p>
+                    <input class="mb-3 form-control text-success fw-bold" style="font-family: monospace;" value='<script src="https://cdn.jsdelivr.net/gh/sameeramurthy/inkshade@latest/dist/js/inkshade.min.js"></script>' readonly>
+                    <a href="js.html" class="btn btn-primary">Inkshade.JS docs &raquo;</a>
+                </div>
+                <div class="col-md border-left text-left py-4 px-5">
+                    <h3 class="mb-3">Inkshade CSS</h3>
+                    <p class="mb-3 fw-bold text-warning">Docs? Use it like Bootstrap. It'll work.</p>
+                    <p class="mb-3">InkshadeCSS is based on Bootstrap and Grayshift, so you will be using thier docs amd have the same classnames.</p>
+                    <p class="mb-3"><b>But instead of using the default CDN, you can use the improved, themeing compatible CDN.</b></p>
+                    <input class="mb-3 form-control text-success fw-bold" style="font-family: monospace;" value='<link href="https://cdn.jsdelivr.net/gh/sameeramurthy/inkshade@latest/dist/css/inkshade.min.css" rel="stylesheet"/>' readonly>
+                    <a href="https://grayshift.io/docs/components/buttons/" class="btn btn-primary">Grayshift Docs &raquo;</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
